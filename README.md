@@ -1,2 +1,24 @@
-# liga-dashboard
-Football league prediction model &amp; dashboard
+# ליגת העל 2025/26 — מודל חיזוי סטטיסטי
+
+דשבורד אינטראקטיבי לחיזוי סיכויים בליגת העל הישראלית.
+
+## דשבורד
+[צפייה בדשבורד](https://pilee11.github.io/liga-dashboard/)
+
+## קוד המודל
+[צפייה במחברת ב-Colab](https://colab.research.google.com/drive/1KZ7A3nqXF94hzQaDSrrCpufMQ4hjo7mD?usp=sharing)
+
+## יעדי חיזוי
+- זכייה באליפות
+- סיום Top 4 (אירופה)
+- פלייאוף עליון (Top 6)
+- ירידה לליגה הלאומית
+
+## נתונים
+- ישראל, יוון, קפריסין — 2000 עד 2025
+- מקור: Transfermarkt
+
+## מודל
+- אלגוריתם: Logistic Regression
+- אימון: 5,095 משחקים
+- ולידציה: עונות 2023/24 ו-2024/25
