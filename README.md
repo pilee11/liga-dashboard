@@ -1,24 +1,41 @@
-# ליגת העל 2025/26 — מודל חיזוי סטטיסטי
+# Liga Leumit 2025/26 — Statistical Prediction Model
 
-דשבורד אינטראקטיבי לחיזוי סיכויים בליגת העל הישראלית.
+An interactive dashboard for predicting Israeli Premier League outcomes using machine learning.
 
-## דשבורד
-[צפייה בדשבורד](https://pilee11.github.io/liga-dashboard/)
+## Dashboard
 
-## קוד המודל
-[צפייה במחברת ב-Colab](https://colab.research.google.com/drive/1KZ7A3nqXF94hzQaDSrrCpufMQ4hjo7mD?usp=sharing)
+[View Dashboard](https://pilee11.github.io/liga-dashboard/)
 
-## יעדי חיזוי
-- זכייה באליפות
-- סיום Top 4 (אירופה)
-- פלייאוף עליון (Top 6)
-- ירידה לליגה הלאומית
+## Model Code
 
-## נתונים
-- ישראל, יוון, קפריסין — 2000 עד 2025
-- מקור: Transfermarkt
+[View on Colab](https://colab.research.google.com/drive/1KZ7A3nqXF94hzQaDSrrCpufMQ4hjo7mD#scrollTo=CtDFCYFkK0pp)
 
-## מודל
-- אלגוריתם: Logistic Regression
-- אימון: 5,095 משחקים
-- ולידציה: עונות 2023/24 ו-2024/25
+## Prediction Targets
+
+- Championship winner
+- European qualification (Top 4)
+- Upper playoff (Top 6)
+- Relegation to Liga Leumit
+
+## Data
+
+- Leagues: Israel, Greece, Cyprus — 2000 to 2025
+- Source: Transfermarkt
+
+## Model
+
+- Algorithm: Logistic Regression
+- Training: 5,095 matches
+- Validation: 2023/24 and 2024/25 seasons
+
+## Features
+
+- Dynamic ELO ratings updated after each match
+- Home win rate with Bayesian smoothing
+- Cumulative goals scored and conceded rankings
+- Historical league performance (last 3–20 seasons)
+- Squad turnover rate
+
+## How It Works
+
+Each round, the model generates win probabilities for all four targets using in-season snapshot features. Mathematical filters ensure probabilities reflect what is still achievable given remaining fixtures.
